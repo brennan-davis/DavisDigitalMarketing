@@ -1,0 +1,26 @@
+.active {
+  border-bottom: #ffd87b 2px solid;
+}
+
+.nav-item a:hover {
+  background-color: rgba(170, 170, 170, 0.1);
+  color: white;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 991px) {
+  .active {
+    border-left: #ffd87b 2px solid;
+    border-bottom: none;
+  }
+
+  .nav-item {
+    padding-bottom: 0 !important;
+  }
+
+  .nav-item a {
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+    font-size: 1.35rem;
+  }
+}

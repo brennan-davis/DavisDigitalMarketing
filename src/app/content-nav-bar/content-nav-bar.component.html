@@ -1,0 +1,84 @@
+<div class="container p-3">
+  <nav class="navbar navbar-expand-lg" style="border: none">
+    <div class="container-fluid">
+      <button
+        class="navbar-toggler btn btn-lg border-0 fs-4 pb-2 mb-3 mx-auto border-bottom border-secondary"
+        id="menuToggle"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        style="color: #fff; border-radius: 0; width: 100%"
+      >
+        Menu
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="container-fluid navbar-nav d-flex gap-4">
+          <div
+            class="nav-item fs-5 pb-3"
+            [routerLink]="[menuItems[0].linkUrl]"
+            [routerLinkActive]="'active'"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            <a
+              class="text-decoration-none p-2"
+              [routerLink]="[menuItems[0].linkUrl]"
+              ><i
+                class="fa-solid fa-file-lines fa-xs text-secondary"
+                style="width: 21px; text-align: center"
+              ></i
+              >&nbsp; {{ menuItems[0].linkName }}</a
+            >
+          </div>
+          <div
+            class="nav-item fs-5 pb-3"
+            [routerLink]="[menuItems[1].linkUrl]"
+            [routerLinkActive]="'active'"
+          >
+            <a
+              class="text-decoration-none p-2"
+              [routerLink]="[menuItems[1].linkUrl]"
+              ><i
+                class="fa-solid fa-code fa-xs text-secondary"
+                style="width: 21px; text-align: center"
+              ></i
+              >&nbsp; {{ menuItems[1].linkName }}</a
+            >
+          </div>
+          <div
+            class="nav-item fs-5 pb-3"
+            [routerLink]="[menuItems[2].linkUrl]"
+            [routerLinkActive]="'active'"
+          >
+            <a
+              class="text-decoration-none p-2"
+              [routerLink]="[menuItems[2].linkUrl]"
+              ><i
+                class="fa-solid fa-rectangle-ad fa-xs text-secondary"
+                style="width: 21px; text-align: center"
+              ></i
+              >&nbsp; {{ menuItems[2].linkName }}</a
+            >
+          </div>
+          <div
+            class="nav-item fs-5 pb-3"
+            [routerLink]="[menuItems[3].linkUrl]"
+            [routerLinkActive]="'active'"
+          >
+            <a
+              class="text-decoration-none p-2"
+              [routerLink]="[menuItems[3].linkUrl]"
+              ><i
+                class="fa-solid fa-message fa-xs text-secondary"
+                style="width: 21px; text-align: center"
+              ></i
+              >&nbsp; {{ menuItems[3].linkName }}</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
